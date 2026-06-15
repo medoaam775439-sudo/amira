@@ -257,6 +257,8 @@ h1{
     background:#ff8fc7;
     border-radius:50%;
     animation:floatUp linear infinite;
+    will-change:transform, opacity;
+    transform:translateZ(0);
 }
 
 .balloon::after{
@@ -372,7 +374,7 @@ openBtn.addEventListener("click", () => {
 });
 const decorations = document.getElementById("decorations");
 
-for(let i=0;i<55;i++){
+for(let i=0;i<45;i++){
 
     const balloon = document.createElement("div");
     balloon.classList.add("balloon");
@@ -384,7 +386,7 @@ for(let i=0;i<55;i++){
     decorations.appendChild(balloon);
 }
 
-for(let i=0;i<55;i++){
+for(let i=0;i<45;i++){
 
     const bow = document.createElement("div");
     bow.classList.add("bow");
